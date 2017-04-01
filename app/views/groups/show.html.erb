@@ -11,7 +11,7 @@
        <% end %>
 </span>
 
-    <%= link_to("Write a Post", new_group_post_path(@group), class: "btn btn-default pull-right")%>
+    <%= link_to("Write a Review", new_group_post_path(@group), class: "btn btn-default pull-right")%>
     <% if current_user && current_user == @group.user %>
     <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right")%>
     <% end %>
@@ -22,7 +22,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th>文章内容</th>
+        <th>评论</th>
         <th>发表者</th>
         <th>发表时间</th>
       </tr>
