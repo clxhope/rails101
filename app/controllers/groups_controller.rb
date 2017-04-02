@@ -38,7 +38,7 @@ end
 
      def destroy
     @group.destroy
-    flash[:alert] = "Group deleted"
+    flash[:alert] = "Movie deleted"
     redirect_to groups_path
   end
 
