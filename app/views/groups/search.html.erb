@@ -1,0 +1,13 @@
+<%= render :partial => "groups/search_bar" %>
+
+<br>
+<div class="search-result">
+
+  <table class="table table-borderd">
+    <% @groups.each do |group| %>
+      <%= link_to(render_highlight_content(group,@query_string),group_path(group)) %>
+      <hr>
+    <% end %>
+ </table>
+
+</div>

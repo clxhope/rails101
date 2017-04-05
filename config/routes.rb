@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :groups do
+    collection do
+      get :search
+    end
 
-        member do
+    member do
       post :join
       post :quit
     end
